@@ -1,0 +1,22 @@
+name: slate
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - slate/base
+  - slate/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - slate/user
+  core/drupal.dropbutton:
+    - slate/dropbutton
+  core/drupal.dialog:
+    - slate/dialog
+  file/drupal.file:
+    - slate/file
+  core/drupal.progress:
+    - slate/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.1.1'
