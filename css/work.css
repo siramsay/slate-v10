@@ -89,6 +89,9 @@ label {
   min-width: 10ch;
   display: inline-block;
 }
+
+/* Details*/
+
 summary {
   padding: 0.8em 0.5em; /* Currently details component code is overriding this - make it the same size as input - This was fixed by adding weight to 0 of this work.css*/
 }
@@ -140,6 +143,24 @@ input[type="radio"] {
   -o-transition: all 0.5s ease;
   transition: background 0.5s ease;
   outline: none;
+}
+
+/* select Add down arrow: on comments text formats, contact form selects */
+.form-type-select select {
+  /*
+  display: flex;
+  justify-content: space-between;
+  */
+  display: inline;
+
+  /* If you don't use ;utf8 then you need to encode the opening and closing tags , use %23 for #*/
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 16 16'> <path fill='%23424B5A' stroke='%23424B5A' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6 z' /></svg>");
+  /*background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'> <path d = 'M3 3 L3 25 L23 14 z' stroke = 'black' stroke-width = '3' fill = 'black'/> </svg>");*/
+
+  background-repeat: no-repeat;
+  background-position: right 1.35rem center;
+  background-size: 1.1rem 1.1rem;
+
 }
 
 /* Override for webform
