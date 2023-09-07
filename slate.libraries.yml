@@ -2,6 +2,8 @@ base:
   version: VERSION
   css:
     component:
+      css/work.css:
+        weight: 0
       css/components/action-links.css:
         weight: -10
       css/components/breadcrumb.css:
