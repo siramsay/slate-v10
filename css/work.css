@@ -236,6 +236,11 @@ input[type="checkbox"]:focus {
 
  * Below is copied from Claro ::before
  */
+blockquote {
+  max-width: 75ch;
+  line-height: 1.5;
+}
+
 blockquote::before {
   position: absolute;
   left: 20px; /* -2.5rem; */
@@ -244,6 +249,29 @@ blockquote::before {
   font-family: var(--font-family-serif);
   font-size: 2em; /* var(--space-xl); */
   line-height: 1em;
+}
+blockquote *:last-child::after {
+  position: absolute;
+  right: 20px; /* -2.5rem; */
+  content: close-quote;
+  color: var(--color-absolutezero);
+  font-family: var(--font-family-serif);
+  font-size: 2em; /* var(--space-xl); */
+  line-height: 1em;
+}
+
+blockquote *:last-child::after {
+  position: relative;
+  right: -0.5rem;
+  content: close-quote;
+  color: var(--color-absolutezero);
+  font-family: var(--font-family-serif);
+  font-size: 2em;
+  line-height: 0;
+  top: 1rem;
+  bottom: 0;
+  height: 1rem;
+  display: inline-block;
 }
 /*
 Add in the classes for blockquote and aside.
