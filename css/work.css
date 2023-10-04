@@ -89,6 +89,20 @@ label {
   min-width: 10ch;
   display: inline-block;
 }
+/* from Claro
+ * input are set to display inline-block by use agent. It seems having label above an input is better for a default layout style.
+ * .form-item__label
+ */
+
+label {
+  display: table;
+  /*margin-top: calc(var(--space-xs) / 2);
+  margin-bottom: calc(var(--space-xs) / 2);
+  font-size: var(--font-size-s);
+  font-weight: bold;
+  line-height: var(--line-height-form-label);
+   */
+}
 
 /* Details*/
 
