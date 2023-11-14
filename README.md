@@ -25,8 +25,10 @@ starter theme's needs.
 Light mode is default but where needed I have adjust HTML5 elements for dark mode across browser. 
 The theme doesn't come with a dark mode as such, however.
 
-#### Form Elements
+### Accessibility 
+- Focus Styles
 
+#### Form Elements
 - Label
 - Input
 - Text Fields
@@ -48,5 +50,7 @@ The theme doesn't come with a dark mode as such, however.
   - (Doesn't effect of canvas tray)
 
 #### Forms for Commerce 
-- Cart
+- Shopping Cart
+- Checkout
+  - Checkout login
 - Order
