@@ -306,3 +306,20 @@ Add JS.
 
 }
 
+
+/* Table */
+table, td, th {
+  border: 1px solid #E5E5E5;
+  font-size: .85rem;
+}
+
+td, th {
+  padding: 8px;
+  border-width: 0 1px 1px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  table {
+    font-size: 1rem;
+  }
+}
