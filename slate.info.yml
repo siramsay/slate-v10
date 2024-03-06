@@ -21,8 +21,20 @@ libraries-extend:
 core_version_requirement: ^10
 generator: 'starterkit_theme:10.1.1'
 
+# Starter Kit Regions
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+  footer: Footer
 
-
+# Olivero Regions
 #regions:
 #  header: Header
 #  primary_menu: 'Primary menu'
