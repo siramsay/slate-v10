@@ -2,6 +2,8 @@ base:
   version: VERSION
   css:
     component:
+      css/typography.css:
+        weight: 0
       css/work.css:
         weight: 0
       css/components/action-links.css:
