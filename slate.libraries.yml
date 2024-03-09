@@ -4,6 +4,8 @@ base:
     component:
       css/typography.css:
         weight: 0
+      css/vertical-rhythm.css:
+        weight: 0
       css/work.css:
         weight: 0
       css/components/action-links.css:
