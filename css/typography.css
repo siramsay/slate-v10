@@ -16,17 +16,19 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Nunito Sans 700', sans-serif;
+  font-weight: 700;
   line-height: 1.15;
+  font-optical-sizing: auto;
 }
 
 h1,
 .text-size-h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito Sans 700', sans-serif;
   font-weight: 700;
   margin-top: 0;
   font-size: 3.05em;
+  font-optical-sizing: auto;
 }
 
 h2,
