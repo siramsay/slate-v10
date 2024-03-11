@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("TrueType");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-variation-settings: "wdth" 100;
+}
+
+@font-face {
+  font-family: "Nunito Sans 700";
+  src: url("../../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format("TrueType");
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
