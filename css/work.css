@@ -6,6 +6,20 @@
   box-sizing: border-box;
 }
 
+/*
+h1 h2 reset to keep rhythm
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  /* remove browser default */
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 /*layout-container*/
 
 .layout-container {

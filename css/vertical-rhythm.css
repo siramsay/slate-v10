@@ -1,3 +1,6 @@
+.layout-container * + * {
+  margin-block-start: .5rem;
+}
 .layout-container > * + * {
   margin-block-start: 1.5rem;
 }
