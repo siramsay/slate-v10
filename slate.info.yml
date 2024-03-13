@@ -21,6 +21,10 @@ libraries-extend:
 core_version_requirement: ^10
 generator: 'starterkit_theme:10.1.1'
 
+ckeditor5-stylesheets:
+  - css/base/fonts.css
+  - css/typography.css
+
 # Starter Kit Regions
 regions:
   header: Header
