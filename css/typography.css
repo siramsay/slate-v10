@@ -24,7 +24,6 @@ h5 {
 h1,
 .text-size-h1 {
   font-family: 'Nunito Sans 900', sans-serif;
-  font-weight: 900;
   margin-top: 0;
   font-size: 3.05em;
   font-optical-sizing: auto;
@@ -47,4 +46,10 @@ h5,
 small,
 .text-small {
   font-size: 0.64em;
+}
+
+/* ck-content styles */
+.ck-content h2 {
+  font-family: 'Nunito Sans 900', sans-serif;
+  font-size: 2.44em;
 }
