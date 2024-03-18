@@ -15,7 +15,10 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+
+h5,
+h6 {
+
   font-family: 'Nunito Sans 900', sans-serif;
   line-height: 1.15;
   font-optical-sizing: auto;
@@ -41,6 +44,9 @@ h4,
 h5,
 .text-size-h5 { font-size: 1.25em; }
 
+h6,
+.text-size-h5 { font-size: 1em; }
+
 .text-caption { font-size: 0.8em; }
 
 small,
@@ -48,8 +54,24 @@ small,
   font-size: 0.64em;
 }
 
+
+/* text-formatted rules */
+.text-formatted p {
+  margin-top: 1.5rem;
+}
+.text-formatted h2 {
+  margin-top: 2rem;
+}
+.text-formatted h3,
+.text-formatted h4,
+.text-formatted h5,
+.text-formatted h6 {
+  margin-top: 1.5rem;
+}
+
 /* ck-content styles */
 .ck-content h2 {
   font-family: 'Nunito Sans 900', sans-serif;
   font-size: 2.44em;
 }
+
