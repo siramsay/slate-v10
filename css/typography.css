@@ -15,8 +15,10 @@ h1,
 h2,
 h3,
 h4,
+
 h5,
 h6 {
+
   font-family: 'Nunito Sans 900', sans-serif;
   line-height: 1.15;
   font-optical-sizing: auto;
@@ -24,8 +26,7 @@ h6 {
 
 h1,
 .text-size-h1 {
-  font-family: 'Nunito Sans 700', sans-serif;
-  font-weight: 700;
+  font-family: 'Nunito Sans 900', sans-serif;
   margin-top: 0;
   font-size: 3.05em;
   font-optical-sizing: auto;
@@ -52,6 +53,7 @@ small,
 .text-small {
   font-size: 0.64em;
 }
+
 
 /* text-formatted rules */
 .text-formatted p {

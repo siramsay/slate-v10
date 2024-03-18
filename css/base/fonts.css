@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("TrueType");
+  src: url("../../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -8,11 +8,15 @@
 }
 
 @font-face {
-  font-family: "Nunito Sans 700";
-  src: url("../../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format("TrueType");
-  font-weight: 700;
+  font-family: "Nunito Sans 900";
+  src: url("../../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
   font-variation-settings:
+    'wght' 900,
     "wdth" 100,
     "YTLC" 500;
+   font-display: swap;
 }
+
+
