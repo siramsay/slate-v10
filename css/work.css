@@ -38,222 +38,6 @@ h5 {
   padding-left: 15px;
 }
 
-
-/*form*/
-
-/* additional default setting added to normalize*/
-button, optgroup, select, textarea,
-input:not([type='checkbox'],[type='radio']) {
-  width: 100%;
-  /* 100% only sets it to 100% of the element explicit size attribute / intrinsic width needed?
-   * For this reason you are best to use at least 30 size to cover narrower devices.
-   */
-
-  max-width: 50ch; /* 400px  50ch doesn't match to 428px breakpoint*/
-  /* box-sizing: border-box; only needed if not set on */
-}
-
-@media screen and (min-width: 428px) {
-  button, optgroup, select, textarea,
-  input:not([type='checkbox'],[type='radio']) {
-    width: 350px;
-  }
-}
-
-/*input, */
-optgroup, select, textarea,
-input:not([type='checkbox'],[type='radio']) {
-  box-sizing: border-box; /* not needed if et in * */
-  height: auto;
-  border: 1px solid #979797;
-  border-radius: 3px;
-  background-color: #ffffff;
-  /* font-family: 'Open Sans', sans-serif; not needed as normalize sets it to inherit */
-  padding: 0.8em 1em;
-  appearance: none;
-  line-height: normal; /* If you set this to 1.5, you get weird height difference with some fonts because normalize sets it too 1.15 - normal works nicely for all fonts */
-  /* in above
-  width: 100%;
-  max-width: 350px;
-  */
-}
-
-
-input[id^="edit-submit-"], #edit-submit, #edit-preview, [type="submit"] {
-  background-color: #131313 !important;
-  border-color: #131313;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 4px;
-  box-shadow: none;
-  color: #f7fcf7 !important;
-  cursor: pointer;
-  /*
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-size: 14px !important;
-  padding: 10px !important;
-  height: auto;
-  line-height: 20px;
-  */
-  font-weight: 700;
-  margin: 0 !important;
-
-}
-label {
-  min-width: 10ch;
-  display: inline-block;
-}
-/* from Claro
- * input are set to display inline-block by use agent. It seems having label above an input is better for a default layout style.
- * .form-item__label
- */
-
-label {
-  display: table;
-  /*margin-top: calc(var(--space-xs) / 2);
-  margin-bottom: calc(var(--space-xs) / 2);
-  font-size: var(--font-size-s);
-  font-weight: bold;
-  line-height: var(--line-height-form-label);
-   */
-}
-
-/* Details*/
-
-summary {
-  padding: 0.8em 0.5em; /* Currently details component code is overriding this - make it the same size as input - This was fixed by adding weight to 0 of this work.css*/
-}
-/* Need to add focus on with ::after style */
-
-/* Search Page */
-#search-form .container-inline label {
-  display: block;
-}
-@media screen and (min-width: 800px) {
-  #search-form .container-inline label {
-  }
-}
-@media screen and (min-width: 428px) {
-  .search-advanced #edit-keywords-fieldset label {
-    width: 30ch;
-  }
-}
-ol.search-results {
-  padding-inline-start: 0;
-}
-ol.search-results li {
-  margin-left: 0;
-}
-
-
-/* Chrome + Safari + Opera + Firefox todo: remove the supports rule */
-/* Also check /claro/css/components/form--checkbox-radio.css*/
-/*@supports (-webkit-appearance:none) { Supports no longer needed */
-
-#drupal-off-canvas input[type="checkbox"],
-input[type="checkbox"],
-input[type="radio"] {
-  -webkit-appearance: none; /* Safari and Chrome */
-  -moz-appearance: none !important;
-  -o-appearance: none !important;
-  appearance: none !important;
-  display: inline-block;
-  position: relative;
-  top: 5px;
-  margin-right: 0.75em;
-  padding: 0;
-  background: #fff;
-  border: 1px solid #757575;
-  border-radius: 2px;
-  width: 1.125rem;
-  height: 1.125rem;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: background 0.5s ease;
-  outline: none;
-}
-
-/* select Add down arrow: on comments text formats, contact form selects */
-.form-type-select select {
-  /*
-  display: flex;
-  justify-content: space-between;
-  */
-  display: inline;
-
-  /* If you don't use ;utf8 then you need to encode the opening and closing tags , use %23 for #*/
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 16 16'> <path fill='%23424B5A' stroke='%23424B5A' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6 z' /></svg>");
-  /*background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'> <path d = 'M3 3 L3 25 L23 14 z' stroke = 'black' stroke-width = '3' fill = 'black'/> </svg>");*/
-
-  background-repeat: no-repeat;
-  background-position: right 1.35rem center;
-  background-size: 1.1rem 1.1rem;
-
-}
-
-/* Override for webform
-.node-type-webform input[type=checkbox], */
-input[type="radio"] {
-  top: 0;
-}
-
-input[type="radio"] {
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 0 #fff;
-  transition: box-shadow .1s cubic-bezier(0.28, 0.63, 0.77, 0.17);
-}
-
-#drupal-off-canvas input[type="checkbox"]:hover,
-#drupal-off-canvas input[type="checkbox"]:focus,
-input[type="checkbox"]:hover,
-input[type="checkbox"]:focus,
-input[type="radio"]:hover,
-input[type="radio"]:focus {
-  border-color: #757575;
-  cursor: pointer;
-}
-
-#drupal-off-canvas input[type="checkbox"]:checked,
-input[type=checkbox]:checked,
-input[type=checkbox]:disabled:checked,
-input[type=radio]:checked,
-input[type=radio]:disabled:checked {
-  border: 1px solid #8406f5;
-}
-
-#drupal-off-canvas input[type="checkbox"]:checked,
-input[type=checkbox]:checked,
-input[type=checkbox]:disabled:checked {
-  /* background: url('../img/check.svg') scroll no-repeat 0 0 #0E9C57; */
-  background-image: url("data:image/svg+xml,%3csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3.795 7.096l2.387 2.506 6.023-6.327 1.484 1.56-7.507 7.89L2.31 8.656z' fill='%23fff'/%3e%3c/svg%3e");
-  background-color: #8406f5;
-}
-
-input[type=radio]:checked,
-input[type=radio]:disabled:checked {
-  background: #8406f5;
-  box-shadow: inset 0 0 0 #fff;
-}
-
-input[type=checkbox]:disabled,
-input[type=radio]:disabled {
-  opacity: .5;
-  background: #E2E2E2;
-}
-
-input[type=checkbox]:disabled:hover,
-input[type=radio]:disabled:hover {
-  border-color: #8406f5;;
-  cursor: default;
-  /*cursor: not-allowed;*/
-}
-
-input[type="checkbox"]:focus {
-  outline: auto 2px Highlight;
-  outline: auto 5px -webkit-focus-ring-color;
-}
-
-
 /* blockquote
  * https://developer.mozilla.org/en-US/docs/Web/CSS/quotes
  * open-quote and close-quote can be used in content
@@ -342,3 +126,19 @@ td, th {
 section.comment-wrapper {
   max-width: 70ch;
 }
+
+/* Secondary Menu */
+.region-secondary-menu ul.menu {
+  display: flex;
+  margin-inline-start: 0;
+}
+.region-secondary-menu ul.menu li {
+  margin: 0;
+  /* padding-block: 0.5rem; add a -var for this */
+}
+.region-secondary-menu ul.menu li:not(:last-child) {
+  margin-inline-end: 1.5rem;
+}
+
+
+
