@@ -31,3 +31,24 @@ ul.tabs {
 .tabs a:hover {
   background-color: #f5f5f5;
 }
+
+/* Overrides */
+
+ul.tabs {
+  margin: 0;
+  display: flex;
+}
+.tabs > li {
+  display: unset;
+  margin: 0;
+}
+[dir="rtl"] .tabs > li {
+  margin: 0;
+}
+.tabs > li > a {
+  border-block-end: #010101 8px solid;
+  padding: 1rem 2rem 0.5rem;
+}
+.tabs > li > a.is-active {
+  border-block-end-color: #89A794;
+}
