@@ -52,6 +52,9 @@ small,
   font-size: 0.64em;
 }
 
+a {
+  color: #131313;
+}
 
 /* text-formatted rules */
 .text-formatted p {
