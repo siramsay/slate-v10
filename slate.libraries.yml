@@ -6,6 +6,8 @@ base:
         weight: 0
       css/base/forms.css:
         weight: 0
+      css/base/menu.css:
+        weight: 0
     component:
       css/typography.css:
         weight: 0
