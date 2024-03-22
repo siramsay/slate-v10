@@ -27,14 +27,15 @@ h1,
 .text-size-h1 {
   font-family: 'Nunito Sans 900', sans-serif;
   margin-top: 43px;
+  margin-block-start: 43px;
   font-size: 3.05em;
   font-optical-sizing: auto;
 }
 
 h2,
 .text-size-h2 {
-  font-size: 2.44em;
   margin-top: 29px;
+  font-size: 2.44em;
 }
 
 h3,
@@ -61,11 +62,12 @@ a {
 }
 
 /* text-formatted rules */
+.text-formatted > * + *,
 .text-formatted p {
   margin-top: 1.5rem;
 }
 .text-formatted h2 {
-  margin-top: 2rem;
+  margin-top: 29px;
 }
 .text-formatted h3,
 .text-formatted h4,
