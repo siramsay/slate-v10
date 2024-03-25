@@ -66,6 +66,9 @@ a {
 .text-formatted p {
   margin-top: 1.5rem;
 }
+.text-formatted p {
+  line-height: 1.75;
+}
 .text-formatted h2 {
   margin-top: 29px;
 }
@@ -75,10 +78,3 @@ a {
 .text-formatted h6 {
   margin-top: 1.5rem;
 }
-
-/* ck-content styles */
-.ck-content h2 {
-  font-family: 'Nunito Sans 900', sans-serif;
-  font-size: 2.44em;
-}
-
