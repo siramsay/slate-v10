@@ -12,6 +12,8 @@ base:
         weight: 0
       css/base/menu.css:
         weight: 0
+      css/base/node-links.css:
+        weight: 0
       css/base/tags.css:
         weight: 0
       css/base/typography.css:
