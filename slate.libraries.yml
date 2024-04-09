@@ -14,6 +14,8 @@ base:
         weight: 0
       css/base/menu.css:
         weight: 0
+      css/base/tags.css:
+        weight: 0
     component:
       css/components/action-links.css:
         weight: -10
