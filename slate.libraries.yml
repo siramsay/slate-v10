@@ -8,8 +8,6 @@ base:
         weight: 0
       css/base/vertical-rhythm.css:
         weight: 0
-      css/typography.css:
-        weight: 0
       css/base/forms.css:
         weight: 0
       css/base/menu.css:
@@ -17,6 +15,8 @@ base:
       css/base/node-links.css:
         weight: 0
       css/base/tags.css:
+        weight: 0
+      css/base/typography.css:
         weight: 0
     component:
       css/components/action-links.css:
