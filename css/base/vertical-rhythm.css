@@ -1,8 +1,6 @@
-/*
-.layout-container * + * {
+.layout-container * + :not(.ck-editor__main, .tabs li, .field--name-field-tags *) {
   margin-block-start: .5rem;
 }
- */
 .layout-container > * + * {
   margin-block-start: 1.5rem;
 }
