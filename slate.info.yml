@@ -23,7 +23,7 @@ generator: 'starterkit_theme:10.1.1'
 
 ckeditor5-stylesheets:
   - css/base/fonts.css
-  - css/ck-content.css
+  - css/base/ck-content.css
 
 # Starter Kit Regions
 regions:
