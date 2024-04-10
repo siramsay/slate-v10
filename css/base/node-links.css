@@ -3,6 +3,21 @@ section.field--name-comment ul.inline li {
   padding: 0;
 }
 
-.node__links ul li:not(:last-child) {
+.node__links ul li:not(:last-child),
+section.field--name-comment ul.inline li:not(:last-child) {
   margin-right: 1rem;
+}
+
+#edit-comment-body-0-format {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#edit-comment-body-0-format-help {
+  flex-basis: 50%;
+  display: grid;
+  align-items: center;
+  justify-items: flex-end;
+}
+#edit-comment-body-0-format .js-form-item {
+  flex-basis: auto;
 }
