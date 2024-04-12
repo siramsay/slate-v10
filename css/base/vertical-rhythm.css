@@ -1,4 +1,4 @@
-.layout-container * + :not(.ck-editor__main, .tabs li, .field--name-field-tags *) {
+.layout-container * + :not(.ck-editor__main, .tabs li, .field--name-field-tags *, .text-formatted *) {
   margin-block-start: .5rem;
 }
 .layout-container > * + * {

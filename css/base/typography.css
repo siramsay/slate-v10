@@ -21,6 +21,7 @@ h6 {
   font-family: 'Nunito Sans 900', sans-serif;
   line-height: 1.15;
   font-optical-sizing: auto;
+  margin-block: 1.125rem;
 }
 
 h1,
@@ -33,13 +34,14 @@ h1,
 }
 
 h2,
-.text-size-h2 {
+.h2 {
   margin-top: 29px;
   font-size: 2.44em;
+  /*line-height: 1.64285714em;*/
 }
 
 h3,
-.text-size-h3 { font-size: 1.95em; }
+.h3 { font-size: 1.95em; }
 
 h4,
 .text-size-h4 { font-size: 1.56em; }
@@ -77,4 +79,8 @@ a {
 .text-formatted h5,
 .text-formatted h6 {
   margin-top: 1.5rem;
+}
+.text-formatted ol li,
+.text-formatted ul li {
+  margin-block: 1rem;
 }
