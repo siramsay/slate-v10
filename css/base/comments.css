@@ -1,0 +1,7 @@
+.comment-wrapper .profile {
+  width: 40px;
+  height: 40px;
+  background-color: mediumvioletred;
+  display: flex;
+  overflow: hidden;
+}

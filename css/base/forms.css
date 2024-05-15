@@ -209,6 +209,6 @@ input[type=radio]:disabled:hover {
 }
 
 input[type="checkbox"]:focus {
-  outline: auto 2px Highlight;
-  outline: auto 5px -webkit-focus-ring-color;
+  outline: auto 2px Highlight; /* firefox */
+  outline: auto 5px -webkit-focus-ring-color; /* webkit */
 }
