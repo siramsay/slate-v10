@@ -117,7 +117,22 @@ td, th {
 }
 
 @media only screen and (min-width: 768px) {
-  table {
+  table, td, th {
+    font-size: 1rem;
+  }
+}
+
+/* From .ck-content .table > figcaption */
+table caption {
+  caption-side: top;
+  color: var(--ck-color-selector-caption-text);
+  font-size: .75em;
+  text-align: center;
+  word-break: break-word;
+}
+
+@media only screen and (min-width: 768px) {
+  table caption {
     font-size: 1rem;
   }
 }
