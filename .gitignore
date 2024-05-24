@@ -1,0 +1,6 @@
+node_modules/*
+
+#ignore for now
+ .editorconfig
+ .prettierignore
+
