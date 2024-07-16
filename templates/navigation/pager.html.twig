@@ -43,7 +43,7 @@
           </a>
         </li>
       {% else %}
-        <li class="pager__item pager__item--first" style="opacity: 0.5">
+        <li class="pager__item pager__item--first opacity-50">
             <span class="visually-hidden">{{ 'First page'|t }}</span>
             <span aria-hidden="true">{{ items.first.text|default('« First'|t) }}</span>
         </li>
@@ -57,7 +57,7 @@
           </a>
         </li>
       {% else%}
-        <li class="pager__item pager__item--previous" style="opacity: 0.5">
+        <li class="pager__item pager__item--previous opacity-50">
             <span class="visually-hidden">{{ 'Previous page'|t }}</span>
             <span aria-hidden="true">{{ items.previous.text|default('‹ Previous'|t) }}</span>
         </li>
@@ -95,7 +95,7 @@
           </a>
         </li>
       {% else %}
-        <li class="pager__item pager__item--next" style="opacity: 0.5">
+        <li class="pager__item pager__item--next opacity-50">
             <span class="visually-hidden">{{ 'Next page'|t }}</span>
             <span aria-hidden="true">{{ items.next.text|default('Next ›'|t) }}</span>
         </li>
@@ -109,7 +109,7 @@
           </a>
         </li>
       {% else%}
-        <li class="pager__item pager__item--last" style="opacity: 0.5">
+        <li class="pager__item pager__item--last opacity-50">
             <span class="visually-hidden">{{ 'Last page'|t }}</span>
             <span aria-hidden="true">{{ items.last.text|default('Last »'|t) }}</span>
         </li>
