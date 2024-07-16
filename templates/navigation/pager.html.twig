@@ -32,7 +32,7 @@
 #}
 {% if items %}
   <nav class="pager" role="navigation" aria-labelledby="{{ heading_id }}">
-    <h4 id="{{ heading_id }}" class="visually-hidden">{{ 'Pagination'|t }}</h4>
+    <h2 id="{{ heading_id }}" class="visually-hidden">{{ 'Pagination'|t }}</h2>
     <ul class="pager__items js-pager__items">
       {# Print first item if we are not on the first page. #}
       {% if items.first %}
@@ -42,6 +42,11 @@
             <span aria-hidden="true">{{ items.first.text|default('« First'|t) }}</span>
           </a>
         </li>
+      {% else %}
+        <li class="pager__item pager__item--first" style="opacity: 0.5">
+            <span class="visually-hidden">{{ 'First page'|t }}</span>
+            <span aria-hidden="true">{{ items.first.text|default('« First'|t) }}</span>
+        </li>
       {% endif %}
       {# Print previous item if we are not on the first page. #}
       {% if items.previous %}
@@ -50,6 +55,11 @@
             <span class="visually-hidden">{{ 'Previous page'|t }}</span>
             <span aria-hidden="true">{{ items.previous.text|default('‹ Previous'|t) }}</span>
           </a>
+        </li>
+      {% else%}
+        <li class="pager__item pager__item--previous" style="opacity: 0.5">
+            <span class="visually-hidden">{{ 'Previous page'|t }}</span>
+            <span aria-hidden="true">{{ items.previous.text|default('‹ Previous'|t) }}</span>
         </li>
       {% endif %}
       {# Add an ellipsis if there are further previous pages. #}
@@ -84,6 +94,11 @@
             <span aria-hidden="true">{{ items.next.text|default('Next ›'|t) }}</span>
           </a>
         </li>
+      {% else %}
+        <li class="pager__item pager__item--next" style="opacity: 0.5">
+            <span class="visually-hidden">{{ 'Next page'|t }}</span>
+            <span aria-hidden="true">{{ items.next.text|default('Next ›'|t) }}</span>
+        </li>
       {% endif %}
       {# Print last item if we are not on the last page. #}
       {% if items.last %}
@@ -92,6 +107,11 @@
             <span class="visually-hidden">{{ 'Last page'|t }}</span>
             <span aria-hidden="true">{{ items.last.text|default('Last »'|t) }}</span>
           </a>
+        </li>
+      {% else%}
+        <li class="pager__item pager__item--last" style="opacity: 0.5">
+            <span class="visually-hidden">{{ 'Last page'|t }}</span>
+            <span aria-hidden="true">{{ items.last.text|default('Last »'|t) }}</span>
         </li>
       {% endif %}
     </ul>
