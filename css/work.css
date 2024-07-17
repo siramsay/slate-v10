@@ -147,5 +147,21 @@ section.comment-wrapper {
   max-width: 70ch;
 }
 
+/* Pager */
+.pager__item:not(.pager__item--previous, .pager__item--first, .pager__item--next, .pager__item--last) {
+  width: 32px;
+  height: 32px;
+  margin: 0 .5rem;
+  background-color: #f4f4f4; /* 30% #d8d8d8 */
 
-
+  display: inline-flex;
+  justify-content: center;
+}
+.pager__item.is-active {
+  background-color: #dce5df;
+}
+.pager__item a {
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+}
