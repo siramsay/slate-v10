@@ -1,4 +1,5 @@
-.layout-container * + :not(.ck-editor__main, .tabs li, .field--name-field-tags *, .text-formatted *) {
+/* todo: work on this rule or remove as it is no over-powering, currenly using :not() to remove from elements that don't need it. Is it needed? */
+.layout-container * + :not(.ck-editor__main, .tabs li, .field--name-field-tags *, .text-formatted *, .pager *) {
   margin-block-start: .5rem;
 }
 .layout-container > * + * {
