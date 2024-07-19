@@ -2,10 +2,8 @@ base:
   version: VERSION
   css:
     base:
-      css/work.css:
-        weight: 0
       css/base/comments.css:
-          weight: 0
+        weight: 0
       css/base/fonts.css:
         weight: 0
       css/base/vertical-rhythm.css:
@@ -20,6 +18,8 @@ base:
         weight: 0
       css/base/typography.css:
         weight: 0
+      css/work.css:
+        weight: 1
     component:
       css/components/action-links.css:
         weight: -10
