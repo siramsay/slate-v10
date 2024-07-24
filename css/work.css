@@ -150,6 +150,7 @@ section.comment-wrapper {
 /* Pager */
 .pager__items {
   position: relative;
+  padding-inline-start: 0;
 }
 .pager__item {
   position: relative;
@@ -164,6 +165,24 @@ section.comment-wrapper {
   margin: 0 .25rem;
   background-color: #f4f4f4; /* 30% #d8d8d8 */
 }
+
+@media screen and (max-width: 767px) {
+  .pager__item:not(.is-active, .pager__item--previous, .pager__item--next) {
+    display: none;
+  }
+
+  .pager__item.is-active + .pager__item,
+  .pager__item:has( + .pager__item.is-active) {
+    display: inline-flex;
+  }
+
+  .pager__item span,
+  .pager__item a span {
+    text-indent: -10000px;
+  }
+
+}
+
 .pager__item.is-active {
   background-color: #dce5df;
 }
