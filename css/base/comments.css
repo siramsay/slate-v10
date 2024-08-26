@@ -1,7 +1,27 @@
+/* Comments */
+section.comment-wrapper {
+  max-width: 70ch;
+}
+
 .comment-wrapper .profile {
   width: 40px;
   height: 40px;
   background-color: mediumvioletred;
   display: flex;
   overflow: hidden;
+}
+
+
+/* body .path-comment - */
+.region-content {
+  max-width: 70ch;
+}
+
+.region-content .block-slate-page-title {
+  /* Title */
+}
+
+.region-content .block-slate-content {
+  /* Comment */
+  /* Form */
 }
