@@ -12,16 +12,28 @@ section.comment-wrapper {
 }
 
 
-/* body .path-comment - */
-.region-content {
-  max-width: 70ch;
+/* body .path-comment - form reply, edit reply and so forth*/
+.path-comment {
+  .region-content {
+
+
+    & #block-slate-page-title {
+
+    }
+    & #block-slate-content {
+      /* Comment */
+      /* Form */
+      max-width: 70ch;
+    }
+
+  }
 }
 
-.region-content .block-slate-page-title {
+.region-content #block-slate-page-title {
   /* Title */
 }
 
-.region-content .block-slate-content {
+.region-content #block-slate-content {
   /* Comment */
   /* Form */
 }
