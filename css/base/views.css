@@ -1,0 +1,9 @@
+/* Check Spacing */
+.view-content {
+  display: grid;
+  gap: 3rem;
+
+  & .views-row > article {
+    padding-block-end: 3rem;
+  }
+}
