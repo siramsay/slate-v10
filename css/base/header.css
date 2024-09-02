@@ -1,0 +1,12 @@
+#block-slate-search-form-wide {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  #search-block-form {
+    display: none;
+  }
+  #block-slate-search-form-wide {
+    display: block;
+  }
+}
+
