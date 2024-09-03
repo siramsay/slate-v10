@@ -45,7 +45,8 @@
       {% else %}
         <li class="pager__item pager__item--first opacity-50">
             <span class="visually-hidden">{{ 'First page'|t }}</span>
-            <span aria-hidden="true">{{ items.first.text|default('First'|t) }}</span>
+            <span aria-hidden="true">{{ items.first.text|default('« First'|t)
+              }}</span>
         </li>
       {% endif %}
       {# Print previous item if we are not on the first page. #}
@@ -59,7 +60,7 @@
       {% else%}
         <li class="pager__item pager__item--previous opacity-50">
             <span class="visually-hidden">{{ 'Previous page'|t }}</span>
-            <span aria-hidden="true">{{ items.previous.text|default('Previous'|t) }}</span>
+            <span aria-hidden="true">{{ items.previous.text|default('‹ Previous'|t) }}</span>
         </li>
       {% endif %}
       {# Add an ellipsis if there are further previous pages. #}
@@ -97,7 +98,8 @@
       {% else %}
         <li class="pager__item pager__item--next opacity-50">
             <span class="visually-hidden">{{ 'Next page'|t }}</span>
-            <span aria-hidden="true">{{ items.next.text|default('Next'|t) }}</span>
+            <span aria-hidden="true">{{ items.next.text|default('Next ›'|t)
+              }}</span>
         </li>
       {% endif %}
       {# Print last item if we are not on the last page. #}
@@ -111,7 +113,8 @@
       {% else%}
         <li class="pager__item pager__item--last opacity-50">
             <span class="visually-hidden">{{ 'Last page'|t }}</span>
-            <span aria-hidden="true">{{ items.last.text|default('Last'|t) }}</span>
+            <span aria-hidden="true">{{ items.last.text|default('Last ›'|t)
+              }}</span>
         </li>
       {% endif %}
     </ul>

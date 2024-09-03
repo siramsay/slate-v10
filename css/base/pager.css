@@ -54,6 +54,9 @@
 .pager__item--previous.opacity-50,
 .pager__item--first.opacity-50 {
   padding: 1rem 1rem 1rem 24px;
+  [aria-hidden="true"] {
+    text-indent: -9999px
+  }
 }
 .pager__item--previous.opacity-50::before {
   position: absolute;
@@ -85,6 +88,9 @@
 .pager__item--previous a,
 .pager__item--first a {
   padding: 1rem 1rem 1rem 1.5rem;
+  & [aria-hidden="true"] {
+    text-indent: -9999px
+  }
 }
 .pager__item--previous a::before {
   position: absolute;
@@ -109,7 +115,6 @@
   background-repeat: no-repeat;
 }
 
-
 /* Active Next Last */
 .pager__item--next,
 .pager__item--last {
@@ -118,6 +123,9 @@
 .pager__item--next a,
 .pager__item--last a {
   padding: 1rem 1.5rem 1rem 1rem;
+  & [aria-hidden="true"] {
+    text-indent: -9999px
+  }
 }
 .pager__item--next a::after {
   position: absolute;
@@ -144,11 +152,14 @@
   transform: rotate(180deg);
 }
 
-/* Active Next Last */
+/* inactive Next Last */
 .pager__item--next.opacity-50,
 .pager__item--last.opacity-50 {
   padding: 1rem 1.5rem 1rem 1rem;
   user-select: none;
+  & [aria-hidden="true"] {
+    text-indent: -9999px
+  }
 }
 .pager__item--next.opacity-50::after {
   position: absolute;
