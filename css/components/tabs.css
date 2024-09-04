@@ -49,6 +49,7 @@ ul.tabs {
   border-block-end: #010101 8px solid;
   padding: 1rem 2rem 0.5rem;
 }
-.tabs > li > a.is-active {
+/* .tabs > li > a.is-active this doesn't work when on a search page with results a doesn't get is-active applied*/
+.tabs > li.is-active > a {
   border-block-end-color: #89A794;
 }
