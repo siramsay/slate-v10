@@ -1,0 +1,20 @@
+details {
+  min-height: 44px;
+  & summary {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: '>';
+      padding-right: 1rem;
+      padding-left: .5rem;
+    }
+  }
+  &[open] {
+    & summary {
+      &::before {
+        content: 'X';
+      }
+    }
+  }
+}
