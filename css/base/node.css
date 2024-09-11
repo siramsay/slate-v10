@@ -1,0 +1,9 @@
+.node__meta {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  & article a {
+    display: flex; /* Add to expand to image size */
+  }
+}
