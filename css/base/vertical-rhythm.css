@@ -1,5 +1,14 @@
 /* todo: work on this rule or remove as it is no over-powering, currenly using :not() to remove from elements that don't need it. Is it needed? */
-.layout-container * + :not(.ck-editor__main, .tabs li, .field--name-field-tags *, .text-formatted *, .pager *, input, .form-actions, form *) {
+.layout-container * + :not(
+  .ck-editor__main,
+  .tabs li,
+  .field--name-field-tags *,
+  .node__meta *,
+  .text-formatted *,
+  .pager *,
+  input,
+  .form-actions,
+  form *) {
   margin-block-start: 2.5rem;
 }
 .layout-container > * + * {
