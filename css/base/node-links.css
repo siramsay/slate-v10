@@ -1,10 +1,10 @@
 .node__links ul.inline li,
-section.field--name-comment ul.inline li {
+.comment ul.inline li {
   padding: 0;
 }
 
 .node__links ul li:not(:last-child),
-section.field--name-comment ul.inline li:not(:last-child) {
+.comment ul.inline li:not(:last-child) {
   margin-right: 1rem;
 }
 

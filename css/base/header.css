@@ -1,12 +1,21 @@
+#block-slate-search-form-narrow {
+  display: none;
+  & .form-item {
+    margin: 0;
+  }
+}
 #block-slate-search-form-wide {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  #search-block-form {
+  #block-slate-search-form-narrow {
     display: none;
   }
   #block-slate-search-form-wide {
     display: block;
+    & .form-item {
+      margin: 0;
+    }
   }
 }
 
