@@ -1,4 +1,11 @@
 /* todo: work on this rule or remove as it is no over-powering, currenly using :not() to remove from elements that don't need it. Is it needed? */
+/* */
+.layout-container > *,
+.layout-container > * > * {
+  margin-block-start: 2.5rem;
+}
+
+/* This is applied to all descendants so need the not() rule todo: remove */
 .layout-container * + :not(
   .ck-editor__main,
   .tabs li,
@@ -8,9 +15,15 @@
   .pager *,
   input,
   .form-actions,
-  form *) {
+  .comment__meta *,
+  form *,
+  .search-results > * * ) {
   margin-block-start: 2.5rem;
 }
+
+/* Applies less margin for all elements following
 .layout-container > * + * {
   margin-block-start: 1.5rem;
 }
+ */
+

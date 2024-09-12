@@ -68,6 +68,9 @@ a {
 .text-formatted p {
   margin-top: 1.5rem;
 }
+.text-formatted p:last-child {
+  margin-bottom: 0;
+}
 .text-formatted p {
   line-height: 1.75;
 }
