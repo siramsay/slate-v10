@@ -16,6 +16,8 @@ base:
         weight: 0
       css/base/menu.css:
         weight: 0
+      css/base/messages.css:
+        weight: -1
       css/base/node.css:
         weight: 0
       css/base/node-links.css:
@@ -103,12 +105,12 @@ indented:
   css:
     component:
       css/components/indented.css: {  }
-messages:
-  version: VERSION
-  css:
-    component:
-      css/components/messages.css:
-        weight: -10
+#messages:
+#  version: VERSION
+#  css:
+#    component:
+#      css/components/messages.css:
+#        weight: -10
 node:
   version: VERSION
   css:
