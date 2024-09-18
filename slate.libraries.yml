@@ -16,8 +16,8 @@ base:
         weight: 0
       css/base/menu.css:
         weight: 0
-      css/base/messages.css:
-        weight: -1
+      css/base/status-messages.css:
+        weight: 0
       css/base/node.css:
         weight: 0
       css/base/node-links.css:
