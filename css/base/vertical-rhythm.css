@@ -18,7 +18,7 @@
   .comment__meta *,
   form *,
   .search-results > * *,
-   .messages *) {
+  .messages *) {
   margin-block-start: 2.5rem;
 }
 
