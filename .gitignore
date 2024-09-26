@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
 node_modules/*
+=======
+node_modules
+#template-samples
+>>>>>>> Stashed changes
 
 #ignore for now
  .editorconfig
