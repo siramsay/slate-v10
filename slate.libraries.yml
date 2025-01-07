@@ -6,6 +6,8 @@ base:
         weight: 0
       css/base/details.css:
         weight: 0
+      css/base/embedded-entity.css:
+        weight: 0
       css/base/fonts.css:
         weight: 0
       css/base/vertical-rhythm.css:

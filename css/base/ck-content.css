@@ -4,7 +4,35 @@
   margin-top: 29px;
   font-size: 2.44em;
 }
-
 .ck-content  p {
   line-height: 1.75rem;
+}
+
+/* Entity Embed if using Caption only shows in CKEditor*/
+.ck-content figure.drupal-entity { /*.ck-widget .ck-widget_selected*/
+
+}
+/* If using a caption */
+.ck-content figure.caption-drupal-entity {
+
+}
+.ck-content figure.caption-drupal-entity figcaption {
+  font-style: italic;
+}
+/* No caption & inside the above figure elements */
+.ck-content figure.drupal-entity .embedded-entity {
+
+}
+/* This will be the same as the frontend code */
+.ck-content .embedded-entity .photoswipe-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2%;
+  /*gap: 1rem;*/
+}
+.ck-content .embedded-entity .photoswipe-gallery > div {
+  flex-basis: 32%;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
