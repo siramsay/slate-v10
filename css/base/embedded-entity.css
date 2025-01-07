@@ -1,0 +1,12 @@
+/* This will be the same as the frontend code */
+.text-formatted .embedded-entity .photoswipe-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2%;
+  /*gap: 1rem;*/}
+.text-formatted .embedded-entity .photoswipe-gallery > div {
+  flex-basis: 32%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
