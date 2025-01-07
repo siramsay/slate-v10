@@ -4,9 +4,25 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2%;
-  /*gap: 1rem;*/}
+  /*gap: 1rem;*/
+}
 .text-formatted .embedded-entity .photoswipe-gallery > div {
   flex-basis: 32%;
   flex-grow: 0;
   flex-shrink: 0;
+  margin-bottom: 1rem;
+}
+.text-formatted .embedded-entity .photoswipe-gallery > div a {
+  /* need to add focus */
+  cursor: zoom-in;
+}
+.text-formatted .embedded-entity .photoswipe-gallery > div img {
+  max-width: 100%;
+  height: auto;
+}
+figure.caption-drupal-entity {
+  margin: 0;
+}
+figure.caption-drupal-entity figcaption {
+  font-style: italic;
 }
