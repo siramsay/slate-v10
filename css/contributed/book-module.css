@@ -1,0 +1,7 @@
+/*
+core/themes/stable9/templates/navigation/book-tree.html.twig
+ */
+
+nav[aria-labelledby^="book-label-"] h2 {
+  display: none;
+}
