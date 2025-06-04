@@ -8,7 +8,7 @@
 /* This is applied to all descendants so need the not() rule todo: remove */
 .layout-container * + :not(
   .ck-editor__main,
-  .tabs li,
+  li,
   .field--name-field-tags *,
   .node__meta *,
   .text-formatted *,
