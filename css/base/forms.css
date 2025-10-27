@@ -213,3 +213,40 @@ input[type="checkbox"]:focus {
   outline: auto 2px Highlight; /* firefox */
   outline: auto 5px -webkit-focus-ring-color; /* webkit */
 }
+
+
+
+#contact-message-feedback-form input[type="checkbox"] {
+  all: unset;
+  appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  width: 2.5rem;
+  height: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  clip-path: circle(24px at 50% 50%);
+  background-color: grey;
+  border: 3px solid transparent;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+#contact-message-feedback-form input[type="checkbox"]:checked {
+  background-color: #00cc6d;
+}
+#contact-message-feedback-form input[type="checkbox"]::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  border-radius: 12px;
+  background-color: pink;
+  transform: translateX(-16px);
+  transition: transform 300ms;
+}
+#contact-message-feedback-form input[type="checkbox"]:checked::after {
+  transform: translateX(16px);
+
+}
