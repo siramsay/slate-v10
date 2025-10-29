@@ -204,7 +204,7 @@ input[type=radio]:disabled {
 
 input[type=checkbox]:disabled:hover,
 input[type=radio]:disabled:hover {
-  border-color: #8406f5;;
+  border-color: #8406f5;
   cursor: default;
   /*cursor: not-allowed;*/
 }
@@ -214,7 +214,15 @@ input[type="checkbox"]:focus {
   outline: auto 5px -webkit-focus-ring-color; /* webkit */
 }
 
+.form-type-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 
+  label {
+    margin: 0;
+  }
+}
 
 #contact-message-feedback-form input[type="checkbox"] {
   all: unset;
@@ -222,15 +230,16 @@ input[type="checkbox"]:focus {
   cursor: pointer;
   display: inline-block;
   vertical-align: top;
-  width: 2.5rem;
-  height: 1.5rem;
+  width: 3.5rem;
+  height: 2rem;
   position: relative;
   overflow: hidden;
-  clip-path: circle(24px at 50% 50%);
-  background-color: grey;
+  clip-path: circle(32px at 50% 50%);
+  background-color: rgba(204, 204, 204, 0.99);
   border: 3px solid transparent;
-  border-radius: 12px;
+  border-radius: 32px;
   box-sizing: border-box;
+  transition: background-color 300ms;
 }
 #contact-message-feedback-form input[type="checkbox"]:checked {
   background-color: #00cc6d;
@@ -241,12 +250,11 @@ input[type="checkbox"]:focus {
   content: "";
   position: absolute;
   top: 0;
-  border-radius: 12px;
-  background-color: pink;
-  transform: translateX(-16px);
+  border-radius: 32px;
+  background-color: #121112;
+  transform: translateX(-24px);
   transition: transform 300ms;
 }
 #contact-message-feedback-form input[type="checkbox"]:checked::after {
-  transform: translateX(16px);
-
+  transform: translateX(24px);
 }
