@@ -1,4 +1,7 @@
 /* form */
+:root {
+  --input--focus-border-color: #8406f5; /* light turquoise #84c6c6; */
+}
 
 /* additional default setting added to normalize*/
 button, optgroup, select, textarea,
@@ -127,8 +130,14 @@ input[type="radio"] {
   background: #fff;
   border: 1px solid #757575;
   border-radius: 2px;
+  /* Smaller sizing (pre styling radio) see radio on state for size necessary
+     This is good for the current checkbox, however
+     */
   width: 1.125rem;
   height: 1.125rem;
+  /* Sizes need for radio button per the 17 x 17 SVG see below */
+  /* width: 1.2rem;
+  height: 1.2rem;*/
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: background 0.5s ease;
@@ -161,7 +170,7 @@ input[type="radio"] {
 input[type="radio"] {
   border-radius: 50%;
   box-shadow: inset 0 0 0 0 #fff;
-  transition: box-shadow .1s cubic-bezier(0.28, 0.63, 0.77, 0.17);
+  transition: box-shadow .3s cubic-bezier(0.28, 0.63, 0.77, 0.17);
 }
 
 #drupal-off-canvas input[type="checkbox"]:hover,
@@ -214,6 +223,32 @@ input[type="checkbox"]:focus {
   outline: auto 5px -webkit-focus-ring-color; /* webkit */
 }
 
+input[type=radio] {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: background 0.5s ease;
+}
+/* Radio Button from Claro */
+.form-boolean--type-radio:checked,
+input[type=radio]:checked{
+  background: var(--input--focus-border-color);
+  border-color: var(--input--focus-border-color);
+  background-image: url("data:image/svg+xml,%3csvg width='18' height='18' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle r='4.5' cx='9' cy='9' fill='%23ffffff'/%3e%3c/svg%3e"); /*8406f5*/
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 0 0 0 1px white; /*var(--input--focus-border-color);*/
+  border-width: 5px;
+}
+
+/*
+  //background: var(--navy);
+  border-color: var(--navy);
+  //background-image: url("data:image/svg+xml,%3csvg width='10' height='10' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle r='3' cx='0' cy='0' fill='%23ffffff'/%3e%3c/svg%3e");
+  //background-repeat: no-repeat;
+  //background-position: center;
+ */
+
+
 .form-type-checkbox {
   display: flex;
   align-items: center;
@@ -224,7 +259,8 @@ input[type="checkbox"]:focus {
   }
 }
 
-#contact-message-feedback-form input[type="checkbox"] {
+
+#contact-message-feedback-form input#edit-copy[type="checkbox"] {
   all: unset;
   appearance: none;
   cursor: pointer;
@@ -235,26 +271,26 @@ input[type="checkbox"]:focus {
   position: relative;
   overflow: hidden;
   clip-path: circle(32px at 50% 50%);
-  background-color: rgba(204, 204, 204, 0.99);
+  background-color: #121112;
   border: 3px solid transparent;
   border-radius: 32px;
   box-sizing: border-box;
   transition: background-color 300ms;
 }
-#contact-message-feedback-form input[type="checkbox"]:checked {
+#contact-message-feedback-form input#edit-copy[type="checkbox"]:checked {
   background-color: #00cc6d;
 }
-#contact-message-feedback-form input[type="checkbox"]::after {
+#contact-message-feedback-form input#edit-copy[type="checkbox"]::after {
   width: 100%;
   height: 100%;
   content: "";
   position: absolute;
   top: 0;
   border-radius: 32px;
-  background-color: #121112;
+  background-color: #f6f5f6;
   transform: translateX(-24px);
   transition: transform 300ms;
 }
-#contact-message-feedback-form input[type="checkbox"]:checked::after {
+#contact-message-feedback-form input#edit-copy[type="checkbox"]:checked::after {
   transform: translateX(24px);
 }
