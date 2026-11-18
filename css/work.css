@@ -142,3 +142,20 @@ table caption {
     font-size: 1rem;
   }
 }
+
+/* c3 */
+.c3-legend-item.legend-item-off {
+  opacity: 0.4;
+}
+
+.c3-legend-item.legend-item-off text {
+  text-decoration: line-through;
+}
+
+.c3-legend-item {
+  opacity: 1 !important;
+}
+
+.c3-legend-item.legend-item-off {
+  opacity: 0.4 !important;
+}
