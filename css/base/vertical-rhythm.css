@@ -5,8 +5,13 @@
   margin-block-start: 2.5rem;
 }
 
-/* This is applied to all descendants so need the not() rule todo: remove */
+/* This is applied to all descendants so need the not() rule
+ * todo:
+    - work out a better way to handle this
+    - remove
+ */
 .layout-container * + :not(
+  .site-name,
   .ck-editor__main,
   li,
   .field--name-field-tags *,
